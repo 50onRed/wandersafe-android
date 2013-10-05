@@ -5,6 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
-    <string name="alert_msg">DANGER! DANGER! Hide your wallet!</string>
-
+    <string name="alert_msg">!!! DANGER ZONE !!!</string>
+    <string name="alert_desc">You are entering an area with recent criminal activity.</string>
 </resources>

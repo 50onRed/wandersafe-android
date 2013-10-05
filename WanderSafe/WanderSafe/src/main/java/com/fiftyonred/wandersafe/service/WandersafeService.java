@@ -119,6 +119,7 @@ public class WandersafeService extends Service implements LocationListener {
 
         Notification notification = new Notification.Builder(this)
                 .setContentTitle(getString(R.string.alert_msg))
+                .setContentText(getString(R.string.alert_desc))
                 .setContentIntent(pendingIntent)
                 .setSound(soundUri)
                 .setSmallIcon(R.drawable.ic_launcher)
