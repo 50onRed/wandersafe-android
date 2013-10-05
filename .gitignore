@@ -1,0 +1,17 @@
+target
+reports
+env
+build
+out
+*.swp
+*.pyc
+*.iml
+*.ipr
+*.iws
+.chef
+.project
+.classpath
+.DS_Store
+.gradle
+.idea
+.settings
