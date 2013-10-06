@@ -42,7 +42,7 @@ public class WandersafeService extends Service implements LocationListener {
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
         //Register for GPS updates
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
 
         locationProvider = new LocationProvider(locationManager);
 
