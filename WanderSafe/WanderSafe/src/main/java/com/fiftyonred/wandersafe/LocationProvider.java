@@ -33,7 +33,7 @@ public class LocationProvider {
 
     public String getMapUrl() {
         Double [] coords = getLocation();
-        return BASE_URL + "/map/" + coords[0] + "/" + coords[1] + "/" + RADIUS;
+        return BASE_URL + "/map/" + coords[0] + "/" + coords[1];
     }
 
     /**
