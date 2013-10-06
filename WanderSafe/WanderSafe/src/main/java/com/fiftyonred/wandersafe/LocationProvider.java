@@ -20,13 +20,13 @@ public class LocationProvider {
 
     public Double[] getLocation() {
         Location location = this.locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        Double latitude  = 39.965906;
-        Double longitude = -75.142692;
+        Double latitude  = 39.963155;
+        Double longitude = -75.146548;
 
-        if (location != null) {
-            latitude  = location.getLatitude();
-            longitude = location.getLongitude();
-        }
+//        if (location != null) {
+//            latitude  = location.getLatitude();
+//            longitude = location.getLongitude();
+//        }
         Double[] coords = new Double[]{latitude, longitude};
         return coords;
     }
