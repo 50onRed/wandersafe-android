@@ -13,6 +13,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.fiftyonred.wandersafe.LocationProvider;
@@ -117,7 +118,7 @@ public class WandersafeService extends Service implements LocationListener {
 
         Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
-        Notification notification = new Notification.Builder(this)
+        Notification notification = new NotificationCompat.Builder(this)
                 .setContentTitle(getString(R.string.alert_msg))
                 .setContentText(getString(R.string.alert_desc))
                 .setContentIntent(pendingIntent)
