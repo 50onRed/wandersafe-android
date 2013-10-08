@@ -81,6 +81,11 @@ public class WandersafeService extends Service implements LocationListener {
         Double latitude  = coords[0];
         Double longitude = coords[1];
 
+        if (latitude == null || longitude == null) {
+            Log.d(TAG, "No location available");
+            return;
+        }
+
         Log.d(TAG, "lat "+latitude+"  long "+ longitude);
         int level = locationProvider.getAlertLevel(latitude, longitude);
         Log.d(TAG, "Got a level "+level);
